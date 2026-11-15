@@ -38,6 +38,15 @@ int main(void) {
     int exp = 8;
     printf("%.1f ^ %d = %.2f\n", base, exp, math_power(base, exp));
 
+    int num1 = 48, num2 = 18;
+    printf("GCD of %d and %d = %d\n", num1, num2, math_gcd(num1, num2));
+
+    int fib_n = 10;
+    long long fib_val = math_fibonacci(fib_n, &status);
+    if (status == MATH_SUCCESS) {
+        printf("Fibonacci(%d) = %lld\n", fib_n, fib_val);
+    }
+
     int test_numbers[] = {2, 17, 21, 29, 35};
     int count = sizeof(test_numbers) / sizeof(test_numbers[0]);
     printf("Prime checks: ");
