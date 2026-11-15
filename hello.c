@@ -40,6 +40,11 @@ int main(void) {
 
     int num1 = 48, num2 = 18;
     printf("GCD of %d and %d = %d\n", num1, num2, math_gcd(num1, num2));
+    printf("LCM of %d and %d = %d\n", num1, num2, math_lcm(num1, num2));
+
+    int raw_val = 145;
+    int clamped = math_clamp(raw_val, 0, 100);
+    printf("Clamp(%d, 0, 100) = %d\n", raw_val, clamped);
 
     int fib_n = 10;
     long long fib_val = math_fibonacci(fib_n, &status);
