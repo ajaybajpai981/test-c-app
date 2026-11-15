@@ -1,0 +1,3 @@
+[submodule "submodules/math_utils"]
+	path = submodules/math_utils
+	url = https://github.com/ajaybajpai981/math_utils.git
